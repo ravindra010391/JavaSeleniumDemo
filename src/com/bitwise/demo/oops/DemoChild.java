@@ -7,5 +7,10 @@ public class DemoChild extends DemoParent
 		System.out.println("inside child class method");
 	}
 
+	
+	
+	public void methodToBeOverrriden(int a, int b){
+		System.out.println("child class method: "+ (a*b));
+	}
 
 }

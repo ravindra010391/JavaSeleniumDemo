@@ -17,14 +17,39 @@ public class DemoRunner {
 	 * Access specifiers
 	 */
 
-	public static void main(String[] args) {
-		
-		DemoChild dc = new DemoChild();
-		dc.childMethod();
-		dc.parentMethod();
-		
+public static void main(String[] args) {
+	DemoChild dc = new DemoChild();
+  
+	dc.add(1.2f, 1.5f);
+	dc.add(1.2f, 5);
+	dc.add(1, 1.2f);
+	dc.add(1, 1.2f, 3);
+	
+	
+	//Overrriden methods
+	dc.methodToBeOverrriden(1, 5);
+	
+	int a = 5;
+	int b = 0;
+	float c;
+	
+	
+	try {
+		 c = a/b;
 		
 	}
+	
+	finally{
+		
+		System.out.println("Inside Finally");
+	}
+
+	
+}
+		
+
+
+	
 
 	
 }
